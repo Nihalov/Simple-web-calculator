@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body style="background-color: #ecf0f1;">
+    <div class="container">
+        <input type="text" class="inp" id="display" readonly >
+        <div class="rows" >
+            <button onclick="dis(val='%')" style="background-color: #e7edef;">%</button>
+            <button onclick="dis(val='')" style="background-color: #e7edef;">&#8730</button>
+            <button onclick="clearDis()" style="background-color: #e7edef;">CE</button>
+            <button onclick="del()" style="background-color: #151657; color: #ecf0f1;">C</button>
+        </div>
+        <div class="rows">
+            <button onclick="dis(val=7)">7</button>
+            <button onclick="dis(val=8)">8</button>
+            <button onclick="dis(val=9)">9</button>
+            <button onclick="dis(val='-')" style="background-color: rgb(255, 56, 56); color: white;">-</button>
+        </div>
+        <div class="rows">
+            <button onclick="dis(val=4)">4</button>
+            <button onclick="dis(val=5)">5</button>
+            <button onclick="dis(val=6)">6</button>
+            <button onclick="dis(val='/')" style="background-color: rgb(95, 95, 254); color: white;">&#247</button>
+        </div>
+        <div class="rows">
+            <button onclick="dis(val=1)">1</button>
+            <button onclick="dis(val=2)">2</button>
+            <button onclick="dis(val=3)">3</button>
+            <button onclick="dis(val='*')" style="background-color: rgb(219, 219, 14); color: white;">x</button>
+        </div>
+        <div class="rows">
+            <button onclick="dis(val='.')">.</button>
+            <button onclick="dis(val=0)">0</button>
+            <button onclick="calculate()" style="background-color: #e7edef; an">=</button>
+            <button onclick="dis(val='+')" style="background-color: rgb(4, 201, 1); color: white;">+</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
