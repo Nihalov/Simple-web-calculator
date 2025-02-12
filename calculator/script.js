@@ -5,7 +5,7 @@ function dis(val){
 function calculate(){
     expression = document.getElementById("display").value
     try{
-        expression = expression.replace('/√(\d+)g','Math.sqrt($1)')
+        expression = expression.replace(/√(\d+)/g, "Math.sqrt($1)")
         res = eval(expression)
         document.getElementById("display").value=res
     }
